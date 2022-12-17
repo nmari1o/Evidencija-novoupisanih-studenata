@@ -1,4 +1,4 @@
-# Programiranje-za-web
+# Evidencija novoupisanih studenata
 Student: Mario Nikolić.
 
 Ovaj projekt namijenjen je za evidenciju novoupisanih studenata prve godine preddiplomskog studija i prve godine diplomskog studija.
