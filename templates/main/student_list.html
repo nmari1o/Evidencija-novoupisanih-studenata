@@ -1,0 +1,23 @@
+{%extends "base_generic.html"%}
+{%block content%}
+<br>
+    <h2>STUDENTI</h2>
+    <br>
+
+   
+{%for student in object_list%}
+        
+         
+                <div class="student">
+                <p><strong>Ime studenta</strong>: {{ student.ime_studenta }}</p>
+                <p><strong>Prezime studenta</strong>: {{ student.prezime_studenta }}</p>
+                <p>JMBAG : {{ student.jmbag_studenta }}</p>
+                <p>Email studenta: {{ student.email_studenta }}</p>
+                <p>Upisani smjer: {{ student.student_smjer }}</p>
+                <p>Fakultet studenta: {{ student.student_fakultet }}</p>
+                <p>Lokacija studenta: {{ student.student_postanski_broj }}</p>
+                <p>Datum upisa: {{student.student_datum_upisa}}</p>
+            </div><br>
+
+{%endfor%}
+{%endblock%}

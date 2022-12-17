@@ -1,0 +1,102 @@
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: brown;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+}
+
+li a {
+    padding: 20px;
+}
+
+
+
+.sidebar{
+    text-align:center;
+}
+.sidebar ul li{
+   display:inline;
+
+ }
+
+
+.student{
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+
+
+    
+}
+
+.srednja {
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+
+}
+
+.mjesto {
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+
+}
+
+.sveuciliste {
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+
+}
+
+.maturant {
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+
+}
+
+.smjer {
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+ 
+}
+
+.fakultet {
+    border-color: olive;
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color:beige;
+    
+}
+

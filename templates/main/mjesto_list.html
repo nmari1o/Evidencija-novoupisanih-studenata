@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <br><h2>MJESTA</h2><br>
+ 
+        {% for mjesto in object_list %}
+            <div class="mjesto">
+                <p><strong>Naziv mjesta</strong>: {{ mjesto.naziv_mjesta }}</p>
+                <p>Poštanski broj: {{ mjesto.postanski_broj }}</p>
+            </div><br>
+        {% endfor %}
+
+{% endblock %}

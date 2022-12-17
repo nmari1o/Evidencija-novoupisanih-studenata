@@ -1,0 +1,16 @@
+
+{% extends "base_generic.html" %}
+{% block content %}
+    <br><h2>SMJEROVI</h2><br>
+
+        {% for smjer in object_list %}
+            <div class="smjer">
+                   </p><strong>Naziv smjera</strong>: {{ smjer.naziv_smjera }}</p>
+               
+            {% for smjer in smjer.fakultet.all %}
+            </p>Fakultet na kojem se izvodi smjer: {{ smjer.fakultet }}</p>
+            {% endfor %}
+            </div><br>
+        {% endfor %}
+
+{% endblock %}

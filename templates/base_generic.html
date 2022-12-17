@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> 
+        <title>{% block title %}Evidencija novoupisanih studenata{% endblock %}</title>
+    </head>
+    
+
+<body>
+    <h1>Evidencija novoupisanih studenata</h1>
+    <div  id="sidebar">
+        {% block sidebar %}
+        <ul class="lista">
+            <li><a href="/main">POČETNA</a></li>
+            <li><a href="/main/mjesta">POPIS MJESTA</a></li>
+            <li><a href="/main/sveucilista">POPIS SVEUČILIŠTA</a></li>
+            <li><a href="/main/srednja">POPIS SREDNJIH ŠKOLA</a></li>
+            <li><a href="/main/fakultet">POPIS FAKULTETA</a></li>
+            <li><a href="/main/smjer">POPIS SMJEROVA</a></li><br><br>
+            <li><a href="/main/maturant">POPIS STUDENATA KOJI SU UPISALI 1. GODINU PREDDIPLOMSKOG STUDIJA</a></li>
+            <li><a href="/main/student">POPIS STUDENATA KOJI SU UPISALI 1. GODINU DIPLOMSKOG STUDIJA</a></li>
+        </ul><br>
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

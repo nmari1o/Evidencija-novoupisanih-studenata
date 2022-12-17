@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+{% block content %}
+    <br><h2>MATURANTI</h2><br>
+    
+        {% for maturant in object_list %}
+            <div class="maturant">
+                <p><strong>Ime maturanta</strong>: {{ maturant.ime_maturanta }}</p>
+                <p><strong>Prezime maturanta</strong>: {{ maturant.prezime_maturanta }}</p>
+                <p>Upisni broj: {{ maturant.upisni_broj}}</p>
+                <p>Email maturanta: {{ maturant.email_maturanta }}</p>
+                <p>Upisani smjer: {{ maturant.maturant_smjer }}</p>
+                <p>Upisani fakultet: {{maturant.maturant_fakultet}}
+                <p>Lokacija maturanta: {{ maturant.maturant_postanski_broj }}</p>
+                <p>Završena srednja škola: {{maturant.maturant_srednja_skola}}</p>
+                <p>Datum upisa fakulteta: {{maturant.maturant_datum_upisa}}</p>
+            </div><br>
+        {% endfor %}
+    </ul>
+{% endblock %}

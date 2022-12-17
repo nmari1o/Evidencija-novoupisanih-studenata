@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+{% block content %}
+    <br><h2>SREDNJE ŠKOLE</h2><br>
+   
+        {% for srednja in object_list %}
+            <div class="srednja">
+                <p><strong>Naziv srednje škole</strong>: {{ srednja.naziv_srednje}}</p>
+                <p>Lokacija srednje škole: {{ srednja.srednja_postanski_broj }}</p>
+            </div><br>
+        {% endfor %}
+   
+{% endblock %}
