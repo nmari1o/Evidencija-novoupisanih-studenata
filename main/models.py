@@ -1,6 +1,10 @@
 from django.db import models
 from django.core.validators import *
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
+
+from django import forms
+from django.contrib.auth.forms import UserCreationForm
 
 from django.utils import timezone
 
@@ -9,7 +13,7 @@ from django.utils import timezone
 
 class Mjesto(models.Model):
     postanski_broj = models.IntegerField(default=10000, help_text='value 10 000 to 99 999', validators=[MaxValueValidator(99999),
-            MinValueValidator(10000)])
+            MinValueValidator(10000)], unique=True)
     naziv_mjesta=models.CharField(max_length=30)
 
     def __str__(self):
@@ -75,5 +79,24 @@ class Student(models.Model):
 
     def __str__(self):
         return self.ime_studenta
+    
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    address = models.CharField(max_length=200)
+    # Add other fields here
+
+
+class RegisterForm(UserCreationForm):
+    name = forms.CharField(max_length=100)
+    address = forms.CharField(max_length=200)
+    # Add other fields here
+    
+    class Meta:
+        model = User
+        fields = ['username', 'name', 'address', 'password1', 'password2']
+
+
 
 
